@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <CenterSection heading={{ first_half: "contact", highlight: "me" }}>
       <Container h={550}>
-        <Widget id="clyInQaU" style={{ height: "100%" }} />
+        <Widget inlineOnMobile id="clyInQaU" style={{ height: "100%" }} />
       </Container>
     </CenterSection>
   );

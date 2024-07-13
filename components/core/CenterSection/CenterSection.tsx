@@ -13,10 +13,10 @@ export function CenterSection({
   return (
     <Container mt={100} className={classes.wrapper} size={1400}>
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0, y: 150 }}
         viewport={{ once: false }}
-        transition={{ duration: 2 }}
-        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
       >
         <div className={classes.inner}>
           <Title ff={"Horizon Outlined"} className={classes.title}>
