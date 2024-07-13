@@ -402,6 +402,19 @@
   resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.10.0.tgz#0ec08c58419c731b71517c7fa76b113774bdb7b8"
   integrity sha512-jCMO+hDTw8Gn1CNb15zIENLQ9b0UplGXtjMnEUhDoKH+Q4fta8tBLUxZpPpFtpV+q+gzGqfM76xNAoD1GBpmnA==
 
+"@typeform/embed-react@^3.19.0":
+  version "3.19.0"
+  resolved "https://registry.yarnpkg.com/@typeform/embed-react/-/embed-react-3.19.0.tgz#3afa1f3fc488592d3ab506b82a4c3a92644feb00"
+  integrity sha512-IL7p139VD6JfI/6Y7vqqMj3BWVzhen41eIMTu5u4VLHtUu5Kzfe+lOBr+S5qJxvOhuJwsJzH2QbQGgjs/WBLKA==
+  dependencies:
+    "@typeform/embed" "4.10.2"
+    fast-deep-equal "^3.1.3"
+
+"@typeform/embed@4.10.2":
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-4.10.2.tgz#348cc029843c5c675d34a6543db7ae7a9593dd64"
+  integrity sha512-SBlqMjSftvHB4KgTVIOpOHbBA6umK+8zNxpREoNYyXV4BzaOCUOgrY5UqN7fJOC3tH7g3szwERn0J0jsNo7hqw==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"

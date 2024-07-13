@@ -1,9 +1,10 @@
 import { Group } from "@mantine/core";
-import { Hero } from "../components/Hero/Hero";
-import { About } from "../components/About/About";
-import { Services } from "../components/Services/Services";
-import { Clients } from "../components/Clients/Clients";
-import { Blogs } from "../components/Blogs/Blogs";
+import { Hero } from "../components/home/Hero/Hero";
+import { About } from "../components/home/About/About";
+import { Services } from "../components/home/Services/Services";
+import { Clients } from "../components/home/Clients/Clients";
+import { Blogs } from "../components/home/Blogs/Blogs";
+import { Contact } from "../components/home/Contact/Contact";
 import { motion, useScroll, useSpring } from "framer-motion";
 
 const sections = [
@@ -12,6 +13,7 @@ const sections = [
   <Services key={3} />,
   <Clients key={4} />,
   <Blogs key={5} />,
+  <Contact key={6} />,
 ];
 
 function Section({ component }) {

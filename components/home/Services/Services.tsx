@@ -5,31 +5,31 @@ import {
   IconShoppingBag,
   IconLoader,
 } from "@tabler/icons-react";
-import { ContentSection } from "../ContentSection/ContentSection";
+import { ContentSection } from "../../core/ContentSection/ContentSection";
 
 const services = [
   {
     icon: IconSourceCode,
     title: "Development",
     description:
-      "We build custom website's that are performant and easy for you to manage once the website is handed off.",
+      "I build custom website's that are performant and easy for you to manage once the website is handed off.",
   },
   {
     icon: IconSeo,
     title: "SEO",
     description:
-      "We anaylze your customer base and your competition so we can assure your website is ranked higher and easy to find for your customer base.",
+      "I anaylze your customer base and your competition so I can assure your website is ranked higher and easy to find for your customer base.",
   },
   {
     icon: IconShoppingBag,
     title: "E-Commerce",
-    description: "We make selling your products and services online a breeze.",
+    description: "I make selling your products and services online a breeze.",
   },
   {
     icon: IconLoader,
     title: "Optimization",
     description:
-      "Speed and Responsiveness is crucial for customers having a great experience on your website and we make that a priority by using modern technologies.",
+      "Speed and Responsiveness is crucial for customers having a great experience on your website and I make that a priority by using modern technologies.",
   },
 ];
 
@@ -56,11 +56,11 @@ export function Services() {
       heading="SERVICES"
       flip={false}
       description="I offer a comprehensive suite of web development services tailored
-            to elevate your online presence. Our expert development team crafts
+            to elevate your online presence. I craft
             custom websites that blend aesthetics with functionality, ensuring a
             seamless user experience. Specializing in e-commerce solutions, I
             help businesses create robust online stores that drive sales and
-            customer engagement. Our SEO services are designed to boost your
+            customer engagement. My SEO services are designed to boost your
             website's visibility, helping you rank higher on search engines and
             attract organic traffic. Additionally, I optimize your site for
             speed, performance, and mobile compatibility, ensuring it runs

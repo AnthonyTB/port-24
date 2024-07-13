@@ -1,5 +1,5 @@
-import { ContentSection } from "../ContentSection/ContentSection";
-import { CardsCarousel } from "../Carousel/Carousel";
+import { ContentSection } from "../../core/ContentSection/ContentSection";
+import { CardsCarousel } from "../../core/Carousel/Carousel";
 
 export function Blogs() {
   const blogs = [
@@ -27,7 +27,7 @@ export function Blogs() {
     <ContentSection
       heading="BLOGS"
       description={
-        "We offer a comprehensive suite of web development services tailored to elevate your online presence. Our expert development team crafts custom websites that blend aesthetics with functionality, ensuring a seamless user experience. Specializing in e-commerce solutions, we help businesses create robust online stores that drive sales and customer engagement. Our SEO services are designed to boost your website's visibility, helping you rank higher on search engines and attract organic traffic. Additionally, we optimize your site for speed, performance, and mobile compatibility, ensuring it runs smoothly across all devices. Partner with Phoenix Studio 01 to transform your digital footprint and achieve your business goals."
+        "I dive into key topics to help you maximize your website's potential. Explore my posts on site optimization, where we share practical tips to boost your site's performance and speed. Learn the fundamentals and advanced strategies of SEO to improve your search engine rankings and drive organic traffic. Discover the importance of UI/UX design and how we enhance user experience by analyzing and understanding user interactions with your website. My expert insights aim to empower you with the knowledge to create a more effective and engaging online presence."
       }
     >
       <CardsCarousel items={blogs} />

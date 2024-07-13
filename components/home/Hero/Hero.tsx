@@ -7,11 +7,10 @@ import {
   Group,
   Text,
 } from "@mantine/core";
-import { CTA } from "../CTA/CTA";
+import { CTA } from "../../core/CTA/CTA";
 import classes from "./Hero.module.css";
 import { useRouter } from "next/navigation";
 import BG from "../../public/assets/images/bg.svg";
-import Branding from "../../public/assets/images/STU.svg";
 
 export function Hero() {
   const router = useRouter();
@@ -42,11 +41,10 @@ export function Hero() {
 
             <Text className={classes.description} my={30}>
               I specialize in crafting unique and innovative web solutions
-              tailored to your business needs. Our team of experts combines
-              creativity with cutting-edge technology to ensure your online
-              presence is not just seen, but remembered. Let us transform your
-              vision into a digital masterpiece that sets you apart in a crowded
-              marketplace.
+              tailored to your business needs. I combine creativity with
+              cutting-edge technology to ensure your online presence is not just
+              seen, but remembered. Let us transform your vision into a digital
+              masterpiece that sets you apart in a crowded marketplace.
             </Text>
 
             <CTA label="WORK WITH ME" action={() => {}} />

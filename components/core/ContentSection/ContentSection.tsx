@@ -29,7 +29,7 @@ export function ContentSection({
           <motion.div
             initial={{ x: flip && !mobile ? "100%" : "-100%", opacity: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             whileInView={{ x: 0, opacity: 1 }}
           >
             <Title className={classes.title} ff={"Horizon Outlined"}>
@@ -53,7 +53,7 @@ export function ContentSection({
           <motion.div
             initial={{ x: flip && !mobile ? "-100%" : "100%", opacity: 0 }}
             viewport={{ once: false }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             whileInView={{ x: 0, opacity: 1 }}
           >
             {children}
