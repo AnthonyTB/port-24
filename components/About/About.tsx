@@ -73,6 +73,7 @@ export function About() {
                   <Tabs.List grow>
                     {tabs.map((tab) => (
                       <Tabs.Tab
+                        key={`${tab.heading.toLowerCase()} tab`}
                         ff={"Horizon"}
                         value={tab.heading.toLowerCase()}
                       >
@@ -82,7 +83,11 @@ export function About() {
                   </Tabs.List>
 
                   {tabs.map((tab) => (
-                    <Tabs.Panel mt={25} value={tab.heading.toLowerCase()}>
+                    <Tabs.Panel
+                      key={`${tab.heading.toLowerCase()} content`}
+                      mt={25}
+                      value={tab.heading.toLowerCase()}
+                    >
                       {tab.text.map((p) => (
                         <Text my={15} component="p">
                           {p}
