@@ -11,7 +11,7 @@ export function CenterSection({
   children: ReactElement;
 }) {
   return (
-    <Container mt={100} className={classes.wrapper} size={1400}>
+    <Container className={classes.wrapper} size={1400}>
       <motion.div
         initial={{ opacity: 0, y: 150 }}
         viewport={{ once: false }}

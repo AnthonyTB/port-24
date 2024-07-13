@@ -58,14 +58,3 @@
     max-width: 100%;
   }
 }
-
-.control {
-  padding-left: rem(30px);
-  padding-right: rem(30px);
-  font-family: Greycliff CF, var(--mantine-font-family);
-  font-size: rem(14px);
-
-  @media (max-width: $mantine-breakpoint-md) {
-    width: 100%;
-  }
-}
