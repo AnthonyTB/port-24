@@ -6,6 +6,7 @@ import {
   IconLoader,
 } from "@tabler/icons-react";
 import { ContentSection } from "../../core/ContentSection/ContentSection";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -34,8 +35,14 @@ const services = [
 ];
 
 export function Services() {
-  const items = services.map((feature) => (
-    <div key={feature.title}>
+  const items = services.map((feature, idx) => (
+    <motion.div
+      key={feature.title}
+      initial={{ x: "-100%", opacity: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 1, delay: idx * 0.1 }}
+      whileInView={{ x: 0, opacity: 1 }}
+    >
       <ThemeIcon size={44} radius="md" variant="gradient">
         <feature.icon
           style={{ width: rem(26), height: rem(26) }}
@@ -48,7 +55,7 @@ export function Services() {
       <Text c="dimmed" fz="sm">
         {feature.description}
       </Text>
-    </div>
+    </motion.div>
   ));
 
   return (
