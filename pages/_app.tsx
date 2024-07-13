@@ -1,6 +1,5 @@
 import "@mantine/core/styles.css";
 import Head from "next/head";
-import { Nav } from "../components/Nav/Nav";
 import { MantineProvider, Transition } from "@mantine/core";
 import { theme } from "../theme";
 import "../styles/global.css";
