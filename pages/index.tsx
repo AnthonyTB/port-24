@@ -8,9 +8,10 @@ import { motion, useScroll, useSpring } from "framer-motion";
 
 const sections = [<Hero />, <About />, <Services />, <Clients />, <Blogs />];
 
-function Section({ component }) {
+function Section({ component, idx }) {
   return (
     <motion.div
+      key={`section ${idx}`}
       initial={{ opacity: 0 }}
       viewport={{ once: false }}
       transition={{ duration: 2 }}
@@ -31,7 +32,7 @@ export default function IndexPage() {
   return (
     <>
       {sections.map((section, idx) => (
-        <Section key={`section ${idx}`} component={section} />
+        <Section idx={idx} component={section} />
       ))}
       <motion.div className="progress" style={{ scaleX }} />
     </>

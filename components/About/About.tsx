@@ -62,7 +62,7 @@ export function About() {
             <div className={classes.corner_4}></div>
             <Grid align="center" gutter={80}>
               <Grid.Col order={!mobile ? 1 : 0} span={{ base: 12, md: 4 }}>
-                <Image src={Headshot.src} />
+                <Image alt="Image of Anthony" src={Headshot.src} />
               </Grid.Col>
               <Grid.Col
                 style={{ alignSelf: "start" }}
@@ -82,14 +82,18 @@ export function About() {
                     ))}
                   </Tabs.List>
 
-                  {tabs.map((tab) => (
+                  {tabs.map((tab, t_idx) => (
                     <Tabs.Panel
                       key={`${tab.heading.toLowerCase()} content`}
                       mt={25}
                       value={tab.heading.toLowerCase()}
                     >
-                      {tab.text.map((p) => (
-                        <Text my={15} component="p">
+                      {tab.text.map((p, idx) => (
+                        <Text
+                          key={`tab: ${t_idx} p: ${idx}`}
+                          my={15}
+                          component="p"
+                        >
                           {p}
                         </Text>
                       ))}
