@@ -30,8 +30,8 @@ export default function IndexPage() {
   });
   return (
     <>
-      {sections.map((section) => (
-        <Section component={section} />
+      {sections.map((section, idx) => (
+        <Section key={`section ${idx}`} component={section} />
       ))}
       <motion.div className="progress" style={{ scaleX }} />
     </>
