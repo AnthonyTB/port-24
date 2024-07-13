@@ -6,12 +6,17 @@ import { Clients } from "../components/Clients/Clients";
 import { Blogs } from "../components/Blogs/Blogs";
 import { motion, useScroll, useSpring } from "framer-motion";
 
-const sections = [<Hero />, <About />, <Services />, <Clients />, <Blogs />];
+const sections = [
+  <Hero key={1} />,
+  <About key={2} />,
+  <Services key={3} />,
+  <Clients key={4} />,
+  <Blogs key={5} />,
+];
 
-function Section({ component, idx }) {
+function Section({ component }) {
   return (
     <motion.div
-      key={`section ${idx}`}
       initial={{ opacity: 0 }}
       viewport={{ once: false }}
       transition={{ duration: 2 }}
@@ -32,7 +37,7 @@ export default function IndexPage() {
   return (
     <>
       {sections.map((section, idx) => (
-        <Section idx={idx} component={section} />
+        <Section key={`section ${idx}`} component={section} />
       ))}
       <motion.div className="progress" style={{ scaleX }} />
     </>

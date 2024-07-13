@@ -12,7 +12,11 @@ export function CTA({ label, action = () => {} }: IProps) {
 
   return (
     <motion.div className={classes.container}>
-      <motion.button ref={ref} onClick={() => action} className={classes.cta}>
+      <motion.button
+        ref={ref as any}
+        onClick={() => action}
+        className={classes.cta}
+      >
         <span style={{ position: "relative", zIndex: 20 }}>{label}</span>
         <motion.div
           initial={{ width: "0%" }}

@@ -5,11 +5,11 @@ import { ReactElement } from "react";
 import { motion } from "framer-motion";
 
 interface IProps {
-  button: { label: string; onClick: () => void } | null;
+  button?: { label: string; onClick: () => void } | null;
   heading: string;
   description: string;
   children: ReactElement;
-  flip: boolean;
+  flip?: boolean;
 }
 
 export function ContentSection({

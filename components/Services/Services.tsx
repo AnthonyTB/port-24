@@ -55,14 +55,14 @@ export function Services() {
     <ContentSection
       heading="SERVICES"
       flip={false}
-      description="We offer a comprehensive suite of web development services tailored
+      description="I offer a comprehensive suite of web development services tailored
             to elevate your online presence. Our expert development team crafts
             custom websites that blend aesthetics with functionality, ensuring a
-            seamless user experience. Specializing in e-commerce solutions, we
+            seamless user experience. Specializing in e-commerce solutions, I
             help businesses create robust online stores that drive sales and
             customer engagement. Our SEO services are designed to boost your
             website's visibility, helping you rank higher on search engines and
-            attract organic traffic. Additionally, we optimize your site for
+            attract organic traffic. Additionally, I optimize your site for
             speed, performance, and mobile compatibility, ensuring it runs
             smoothly across all devices. Partner with Phoenix Studio 01 to
             transform your digital footprint and achieve your business goals."
