@@ -25,6 +25,10 @@
   @media (max-width: $mantine-breakpoint-md) {
     margin-right: 0;
   }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    padding-top: var(--mantine-spacing-sm);
+  }
 }
 
 .title {
