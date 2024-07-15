@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 interface IProps {
   label: string;
   action: () => void;
-  disabled: boolean | undefined;
+  disabled?: boolean | undefined;
 }
 
 export function CTA({ label, action = () => {}, disabled = false }: IProps) {
