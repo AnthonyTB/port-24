@@ -13,8 +13,12 @@
   font-weight: 900;
   color: var(--mantine-color-white);
   line-height: 1.2;
-  font-size: rem(24px);
+  font-size: rem(18px);
   margin-top: var(--mantine-spacing-xs);
+
+  @media (min-width: $mantine-breakpoint-md) {
+    font-size: 22px;
+  }
 }
 
 .category {
