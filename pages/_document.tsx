@@ -21,6 +21,16 @@ class MyDocument extends Document {
             name="description"
             content="Explore the professional portfolio of Anthony, a seasoned web developer specializing in Development, E-commerce, SEO, and Optimization. Discover innovative projects, expert insights, and services designed to elevate your digital presence. Visit now to learn more about how Anthony can help bring your web development vision to life."
           />
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `(function(c,l,a,r,i,t,y){
+                        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                      })(window, document, "clarity", "script", "n7tdssfpf4");`,
+            }}
+          />
         </Head>
         <body>
           <Main />
