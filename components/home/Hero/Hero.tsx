@@ -47,7 +47,14 @@ export function Hero() {
               masterpiece that sets you apart in a crowded marketplace.
             </Text>
 
-            <CTA label="WORK WITH ME" action={() => {}} />
+            <CTA
+              label="WORK WITH ME"
+              action={() =>
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            />
           </div>
         </div>
       </Container>

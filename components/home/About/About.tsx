@@ -27,7 +27,7 @@ export function About() {
     <CenterSection
       heading={{ first_half: "learn", highlight: "about", later_half: "me" }}
     >
-      <Grid align="center" gutter={80}>
+      <Grid id={"about"} align="center" gutter={80}>
         <Grid.Col order={!mobile ? 1 : 0} span={{ base: 12, md: 4 }}>
           <Image
             alt="Image of Anthony"
