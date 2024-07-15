@@ -195,14 +195,14 @@ export async function getStaticProps(context) {
       btn: { label: string; link: string };
     }[] = [];
     Blogs.forEach((b: Blog, idx: number) => {
-      if (b.slug.toLowerCase() === slug) {
+      if (b.slug.toLowerCase() === slug.toLowerCase()) {
         blog = b;
       } else {
         other_blogs.push({
           image: b.image,
           title: b.title,
           category: b.categories[0],
-          btn: { label: "READ MORE", link: `/blog/${b.slug}` },
+          btn: { label: "READ", link: `/blog/${b.slug}` },
         });
       }
     });

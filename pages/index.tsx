@@ -1,4 +1,3 @@
-import { Group } from "@mantine/core";
 import { Hero } from "../components/home/Hero/Hero";
 import { About } from "../components/home/About/About";
 import { Services } from "../components/home/Services/Services";
@@ -74,7 +73,7 @@ export async function getStaticProps() {
         image: b.image,
         title: b.title,
         category: b.categories[0],
-        btn: { label: "READ MORE", link: `/blog/${b.slug}` },
+        btn: { label: "READ", link: `/blog/${b.slug}` },
       };
     });
 
