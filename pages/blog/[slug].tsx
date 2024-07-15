@@ -122,7 +122,6 @@ export default function BlogPage({ data }) {
           {blog.content.sections.map((section, idx) => (
             <Section
               key={`s ${idx}`}
-              idx={idx}
               heading={section.heading}
               body={section.body}
             />
