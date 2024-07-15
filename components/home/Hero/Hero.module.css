@@ -37,7 +37,11 @@
   font-weight: 900;
   line-height: 1.05;
   width: 100%;
-  font-size: rem(26px);
+  font-size: rem(24px);
+
+  @media (min-width: 455px) {
+    font-size: rem(28px);
+  }
 
   @media (min-width: 480px) {
     font-size: rem(30px);
@@ -60,7 +64,11 @@
 }
 
 .title span {
-  font-size: rem(40px);
+  font-size: rem(36px);
+
+  @media (min-width: 455px) {
+    font-size: rem(42px);
+  }
 
   @media (min-width: 480px) {
     font-size: rem(46px);
