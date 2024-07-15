@@ -2,19 +2,13 @@ import { Group } from "@mantine/core";
 import { Hero } from "../components/home/Hero/Hero";
 import { About } from "../components/home/About/About";
 import { Services } from "../components/home/Services/Services";
-import { Clients } from "../components/home/Clients/Clients";
-import { Blogs } from "../components/home/Blogs/Blogs";
+import { ClientsSection } from "../components/home/Clients/Clients";
+import { BlogsSection } from "../components/home/Blogs/Blogs";
 import { Contact } from "../components/home/Contact/Contact";
 import { motion, useScroll, useSpring } from "framer-motion";
-
-const sections = [
-  <Hero key={1} />,
-  <About key={2} />,
-  <Services key={3} />,
-  <Clients key={4} />,
-  <Blogs key={5} />,
-  <Contact key={6} />,
-];
+import { Blog } from "../data/blogs/type";
+import Blogs from "../data/blogs/All";
+import { useState, useEffect } from "react";
 
 function Section({ component }) {
   return (
@@ -29,7 +23,34 @@ function Section({ component }) {
   );
 }
 
-export default function IndexPage() {
+export default function IndexPage({ data }) {
+  const [loaded, setLoaded] = useState(false);
+  const [blogs, setBlogs] = useState<
+    | null
+    | {
+        image: string;
+        title: string;
+        btn: { label: string; link: string; category: string };
+      }[]
+  >(null);
+
+  useEffect(() => {
+    console.log(data);
+    if (data) {
+      setBlogs(data);
+      setLoaded(true);
+    }
+  }, [data]);
+
+  const sections = [
+    <Hero key={1} />,
+    <About key={2} />,
+    <Services key={3} />,
+    <ClientsSection key={4} />,
+    <BlogsSection blogs={blogs} key={5} />,
+    <Contact key={6} />,
+  ];
+
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -44,4 +65,27 @@ export default function IndexPage() {
       <motion.div className="progress" style={{ scaleX }} />
     </>
   );
+}
+
+export async function getStaticProps() {
+  const fetchData = async () => {
+    const data = Blogs.map((b: Blog, idx: number) => {
+      return {
+        image: b.image,
+        title: b.title,
+        category: b.categories[0],
+        btn: { label: "READ MORE", link: `/blog/${b.slug}` },
+      };
+    });
+
+    return data;
+  };
+
+  const data = await fetchData();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }

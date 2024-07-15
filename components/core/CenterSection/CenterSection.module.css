@@ -41,16 +41,6 @@
   }
 }
 
-.controls {
-  margin-top: var(--mantine-spacing-lg);
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: $mantine-breakpoint-xs) {
-    flex-direction: column;
-  }
-}
-
 .corner_1 {
   position: absolute;
   top: -2px;

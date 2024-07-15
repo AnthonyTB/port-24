@@ -4,14 +4,17 @@ import { Paper, Text, Title, useMantineTheme, rem, Flex } from "@mantine/core";
 import classes from "./Carousel.module.css";
 import "@mantine/carousel/styles.css";
 import { CTA } from "../CTA/CTA";
+import { useRouter } from "next/router";
 
 interface CardProps {
   image: string;
   title: string;
   category: string;
+  btn: { label: string; link: string; disabled?: boolean };
 }
 
-function Card({ image, title, category }: CardProps) {
+function Card({ image, title, category, btn }: CardProps) {
+  const router = useRouter();
   return (
     <Paper
       shadow="md"
@@ -33,7 +36,13 @@ function Card({ image, title, category }: CardProps) {
         </Title>
       </div>
       <Flex style={{ alignSelf: "center" }} direction={"column"}>
-        <CTA label="READ MORE" action={() => {}} />
+        <CTA
+          label={btn.label}
+          disabled={btn.disabled}
+          action={() => {
+            router.push(btn.link);
+          }}
+        />
       </Flex>
     </Paper>
   );

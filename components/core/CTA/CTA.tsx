@@ -6,9 +6,10 @@ import { useState, useEffect } from "react";
 interface IProps {
   label: string;
   action: () => void;
+  disabled: boolean | undefined;
 }
 
-export function CTA({ label, action = () => {} }: IProps) {
+export function CTA({ label, action = () => {}, disabled = false }: IProps) {
   const { hovered, ref } = useHover();
   const [tapped, setTapped] = useState(false);
 
@@ -23,8 +24,11 @@ export function CTA({ label, action = () => {} }: IProps) {
   return (
     <motion.div className={classes.container}>
       <motion.button
+        disabled={disabled}
         ref={ref as any}
-        onClick={() => action}
+        onClick={() => {
+          action();
+        }}
         onTap={() => setTapped(true)}
         className={classes.cta}
       >

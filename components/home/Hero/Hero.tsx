@@ -10,7 +10,7 @@ import {
 import { CTA } from "../../core/CTA/CTA";
 import classes from "./Hero.module.css";
 import { useRouter } from "next/navigation";
-import BG from "../../public/assets/images/bg.svg";
+import Sig from "../../../public/assets/images/sig.png";
 
 export function Hero() {
   const router = useRouter();

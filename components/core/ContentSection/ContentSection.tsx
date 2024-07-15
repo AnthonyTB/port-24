@@ -20,7 +20,7 @@ export function ContentSection({
   children,
 }: IProps) {
   const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.md})`);
 
   return (
     <div className={classes.wrapper}>

@@ -29,7 +29,12 @@ export function About() {
     >
       <Grid align="center" gutter={80}>
         <Grid.Col order={!mobile ? 1 : 0} span={{ base: 12, md: 4 }}>
-          <Image alt="Image of Anthony" src={Headshot.src} />
+          <Image
+            alt="Image of Anthony"
+            maw={500}
+            mx={"auto"}
+            src={Headshot.src}
+          />
         </Grid.Col>
         <Grid.Col
           style={{ alignSelf: "start" }}
