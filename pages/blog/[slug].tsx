@@ -118,7 +118,9 @@ export default function BlogPage({ data }) {
     <Container py={"xl"}>
       {loaded && blog ? (
         <>
-          <Title ff={"Horizon Outlined"}>{blog.title}</Title>
+          <Title fz={"h2"} ff={"Horizon Outlined"}>
+            {blog.title}
+          </Title>
           {blog.content.sections.map((section, idx) => (
             <Section
               key={`s ${idx}`}
