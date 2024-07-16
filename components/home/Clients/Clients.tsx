@@ -1,5 +1,6 @@
 import { ContentSection } from "../../core/ContentSection/ContentSection";
 import { CardsCarousel } from "../../core/Carousel/Carousel";
+import Quest from "../../../public/assets/images/quest.jpg";
 
 const clients = [
   {
@@ -9,8 +10,7 @@ const clients = [
     btn: { label: "COMING SOON", link: "#", disabled: true },
   },
   {
-    image:
-      "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/415942687_721761553432034_2809138020556936425_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2ikA1ZbSRa4Q7kNvgFT-8UV&_nc_ht=scontent-ord5-1.xx&oh=00_AYBHjq9LBXfsyS0yZhkBSKNpx4WnYHBrMzDCHyQTQJsDAA&oe=6695E9B1",
+    image: Quest.src,
     title: "Quest Hunt Co.",
     category: "Website Design & SEO",
     btn: { label: "COMING SOON", link: "#", disabled: true },
