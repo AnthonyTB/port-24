@@ -1,20 +1,9 @@
-import {
-  Image,
-  Container,
-  BackgroundImage,
-  Title,
-  Button,
-  Group,
-  Text,
-} from "@mantine/core";
+import { Image, Container, Title, Text, Grid } from "@mantine/core";
 import { CTA } from "../../core/CTA/CTA";
 import classes from "./Hero.module.css";
-import { useRouter } from "next/navigation";
-import Sig from "../../../public/assets/images/sig.png";
+import Logo from "../../../public/assets/images/Logo.svg";
 
 export function Hero() {
-  const router = useRouter();
-
   return (
     <div className={classes.root}>
       <Container size={"xl"}>
@@ -56,6 +45,12 @@ export function Hero() {
               }
             />
           </div>
+          <Image
+            className={classes.branding}
+            style={{ rotate: "20deg" }}
+            src={Logo.src}
+            opacity={".05"}
+          />
         </div>
       </Container>
     </div>

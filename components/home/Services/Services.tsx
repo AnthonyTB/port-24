@@ -47,6 +47,7 @@ export function Services() {
         <feature.icon
           style={{ width: rem(26), height: rem(26) }}
           stroke={1.5}
+          color="#242424"
         />
       </ThemeIcon>
       <Text fz="lg" mt="sm" fw={500}>

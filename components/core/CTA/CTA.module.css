@@ -14,6 +14,7 @@
 
 .cta:hover {
   cursor: pointer;
+  color: #242424;
 }
 
 .corner_1 {
@@ -66,6 +67,6 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: linear-gradient(45deg, #00ffff 0%, #9600ff 100%);
+  background: linear-gradient(45deg, #f7ff01 0%, #c6ff00 100%);
   z-index: 1;
 }

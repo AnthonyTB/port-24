@@ -4,7 +4,7 @@ import { Services } from "../components/home/Services/Services";
 import { ClientsSection } from "../components/home/Clients/Clients";
 import { BlogsSection } from "../components/home/Blogs/Blogs";
 import { Contact } from "../components/home/Contact/Contact";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import { Blog } from "../data/blogs/type";
 import Blogs from "../data/blogs/All";
 import { useState, useEffect } from "react";
@@ -50,18 +50,11 @@ export default function IndexPage({ data }) {
     <Contact key={6} />,
   ];
 
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
   return (
     <>
       {sections.map((section, idx) => (
         <Section key={`section ${idx}`} component={section} />
       ))}
-      <motion.div className="progress" style={{ scaleX }} />
     </>
   );
 }
