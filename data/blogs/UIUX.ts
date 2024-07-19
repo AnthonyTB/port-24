@@ -27,26 +27,26 @@ export const UIUX: Blog = {
           {
             type: "p",
             content: {
-              text: "Google Analytics is a powerful tool that provides comprehensive data about your website traffic. It allows you to track:",
+              text: "Google Analytics is a powerful tool that provides comprehensive data about your website traffic. It allows you to track",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Pageviews:",
+                bold: "Pageviews",
                 text: "The total number of pages viewed.",
               },
               {
-                bold: "Sessions:",
+                bold: "Sessions",
                 text: "The number of visits to your site.",
               },
               {
-                bold: "Bounce Rate:",
+                bold: "Bounce Rate",
                 text: "The percentage of visitors who leave after viewing only one page.",
               },
               {
-                bold: "Average Session Duration:",
+                bold: "Average Session Duration",
                 text: "The average length of time visitors stay on your site.",
               },
             ],
@@ -83,22 +83,22 @@ export const UIUX: Blog = {
           {
             type: "p",
             content: {
-              text: "On-site surveys are pop-ups or embedded forms that ask visitors about their experience. You can use tools like Qualaroo or SurveyMonkey to create surveys that gather feedback on:",
+              text: "On-site surveys are pop-ups or embedded forms that ask visitors about their experience. You can use tools like Qualaroo or SurveyMonkey to create surveys that gather feedback on",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Usability:",
+                bold: "Usability",
                 text: "How easy it is to navigate your site.",
               },
               {
-                bold: "Content:",
+                bold: "Content",
                 text: "Whether the information provided is helpful.",
               },
               {
-                bold: "Design:",
+                bold: "Design",
                 text: "How visually appealing your site is.",
               },
             ],

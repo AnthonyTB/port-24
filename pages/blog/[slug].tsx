@@ -10,45 +10,12 @@ import {
   Text,
   Title,
   Flex,
-  List,
-  ThemeIcon,
-  rem,
 } from "@mantine/core";
 import { CenterSection } from "../../components/core/CenterSection/CenterSection";
 import { CardsCarousel } from "../../components/core/Carousel/Carousel";
-import { IconCircleDashedCheck } from "@tabler/icons-react";
 import classes from "./blog.module.css";
 import { CTA } from "../../components/core/CTA/CTA";
-
-const SubHeading = ({ content }): ReactElement => (
-  <Text fz={"h5"} mt={"sm"} fw={700} ff={"Horizon"} component="h5">
-    {content.text}
-  </Text>
-);
-
-const Paragraph = ({ content }): ReactElement => (
-  <Text component="p">{content.text}</Text>
-);
-
-const UL = ({ content }): ReactElement => (
-  <List
-    spacing="xs"
-    size="sm"
-    mt={"md"}
-    center
-    icon={
-      <ThemeIcon variant="gradient" size={24} radius="xl">
-        <IconCircleDashedCheck style={{ width: rem(20), height: rem(20) }} />
-      </ThemeIcon>
-    }
-  >
-    {Array.isArray(content)
-      ? content.map((li: { bold: string; text: string }, i: number) => (
-          <List.Item key={`li ${i}`}>{li.text}</List.Item>
-        ))
-      : ""}
-  </List>
-);
+import { Heading, Paragraph, UL } from "../../components/core/Elements";
 
 const El = ({
   type,
@@ -61,7 +28,7 @@ const El = ({
       element = <Paragraph content={content} />;
       break;
     case "h":
-      element = <SubHeading content={content} />;
+      element = <Heading content={content} />;
       break;
     case "ul":
       element = <UL content={content} />;
@@ -134,7 +101,7 @@ export default function BlogPage({ data }) {
               <Divider />
               <Flex wrap={"wrap"} mt={"sm"} gap={"sm"} direction={"row"}>
                 {blog.categories.map((cat, idx) => (
-                  <Badge key={`cat ${idx}`} variant="gradient">
+                  <Badge c={"#242424"} key={`cat ${idx}`} variant="gradient">
                     {cat}
                   </Badge>
                 ))}

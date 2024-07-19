@@ -27,34 +27,34 @@ export const Performance: Blog = {
           {
             type: "p",
             content: {
-              text: "The speed at which your website loads is a critical factor in user retention and search engine rankings. Slow-loading sites can frustrate users and lead to higher bounce rates. Here are some strategies to enhance your website's speed and performance:",
+              text: "The speed at which your website loads is a critical factor in user retention and search engine rankings. Slow-loading sites can frustrate users and lead to higher bounce rates. Here are some strategies to enhance your website's speed and performance",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Optimize Images:",
+                bold: "Optimize Images",
                 text: "Compress and resize images to reduce load times without sacrificing quality. Tools like TinyPNG and ImageOptim can help.",
               },
               {
-                bold: "Minimize HTTP Requests:",
+                bold: "Minimize HTTP Requests",
                 text: "Reduce the number of elements on your page, such as scripts, images, and CSS files, to decrease load times.",
               },
               {
-                bold: "Optimize Images:",
+                bold: "Optimize Images",
                 text: "Compress and resize images to reduce load times without sacrificing quality. Tools like TinyPNG and ImageOptim can help.",
               },
               {
-                bold: "Use Browser Caching:",
+                bold: "Use Browser Caching",
                 text: "Enable browser caching to store some data locally on users' devices, allowing faster access upon subsequent visits.",
               },
               {
-                bold: "Leverage Content Delivery Networks (CDNs):",
+                bold: "Leverage Content Delivery Networks (CDNs)",
                 text: "CDNs distribute your site's content across multiple servers worldwide, ensuring quicker delivery to users based on their geographic location.",
               },
               {
-                bold: "Optimize CSS and JavaScript:",
+                bold: "Optimize CSS and JavaScript",
                 text: "Minify and combine CSS and JavaScript files to reduce the number of requests and improve loading times.",
               },
             ],
@@ -67,26 +67,26 @@ export const Performance: Blog = {
           {
             type: "p",
             content: {
-              text: "With the increasing number of mobile users, ensuring your site is mobile-friendly is no longer optional. Mobile optimization involves designing and developing your website to be easily accessible and navigable on mobile devices. Key aspects include:",
+              text: "With the increasing number of mobile users, ensuring your site is mobile-friendly is no longer optional. Mobile optimization involves designing and developing your website to be easily accessible and navigable on mobile devices. Key aspects include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Responsive Design:",
+                bold: "Responsive Design",
                 text: "Use a responsive design framework like Bootstrap or Foundation to ensure your site adapts to various screen sizes and devices.",
               },
               {
-                bold: "Simplified Navigation:",
+                bold: "Simplified Navigation",
                 text: "Design a clear and straightforward navigation menu that works well on smaller screens.",
               },
               {
-                bold: "Touch-Friendly Elements:",
+                bold: "Touch-Friendly Elements",
                 text: "Ensure buttons and links are easily tappable and not too close together.",
               },
               {
-                bold: "Optimize for Speed on Mobile:",
+                bold: "Optimize for Speed on Mobile",
                 text: "Mobile users often have slower internet connections, so prioritize speed optimizations for mobile devices.",
               },
             ],
@@ -99,30 +99,30 @@ export const Performance: Blog = {
           {
             type: "p",
             content: {
-              text: "SEO is crucial for driving organic traffic to your website. By optimizing your site for search engines, you increase its visibility and improve its ranking on search engine results pages (SERPs). Key SEO practices include:",
+              text: "SEO is crucial for driving organic traffic to your website. By optimizing your site for search engines, you increase its visibility and improve its ranking on search engine results pages (SERPs). Key SEO practices include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Keyword Research:",
+                bold: "Keyword Research",
                 text: "Identify relevant keywords that your target audience is searching for and incorporate them naturally into your content.",
               },
               {
-                bold: "Quality Content:",
+                bold: "Quality Content",
                 text: "Create high-quality, informative, and engaging content that provides value to your users and encourages them to stay longer on your site.",
               },
               {
-                bold: "On-Page SEO:",
+                bold: "On-Page SEO",
                 text: "Optimize title tags, meta descriptions, header tags, and URL structures to improve search engine indexing and ranking.",
               },
               {
-                bold: "Backlink Building:",
+                bold: "Backlink Building",
                 text: "Acquire high-quality backlinks from reputable websites to boost your site's authority and search engine ranking.",
               },
               {
-                bold: "Technical SEO:",
+                bold: "Technical SEO",
                 text: "Ensure your site has a clean and crawlable code, a proper sitemap, and a secure HTTPS connection.",
               },
             ],
@@ -135,30 +135,30 @@ export const Performance: Blog = {
           {
             type: "p",
             content: {
-              text: "A positive user experience keeps visitors engaged and encourages them to return to your site. UX design focuses on the overall feel of the website and how users interact with it. Key UX practices include:",
+              text: "A positive user experience keeps visitors engaged and encourages them to return to your site. UX design focuses on the overall feel of the website and how users interact with it. Key UX practices include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Clear and Intuitive Navigation:",
+                bold: "Clear and Intuitive Navigation",
                 text: "Make it easy for users to find what they’re looking for with a well-organized and intuitive navigation menu.",
               },
               {
-                bold: "Consistent Design:",
+                bold: "Consistent Design",
                 text: "Maintain a consistent design throughout your site, including fonts, colors, and layouts, to create a cohesive and professional look.",
               },
               {
-                bold: "Accessibility:",
+                bold: "Accessibility",
                 text: "Ensure your site is accessible to all users, including those with disabilities, by following web accessibility guidelines (WCAG).",
               },
               {
-                bold: "Engaging Content:",
+                bold: "Engaging Content",
                 text: "Use multimedia elements like videos, images, and infographics to make your content more engaging and visually appealing.",
               },
               {
-                bold: "Feedback Mechanisms:",
+                bold: "Feedback Mechanisms",
                 text: "Implement feedback mechanisms like surveys, contact forms, and live chat to understand user needs and improve their experience.",
               },
             ],
@@ -171,22 +171,22 @@ export const Performance: Blog = {
           {
             type: "p",
             content: {
-              text: "Optimization is an ongoing process that requires regular monitoring and testing. Use analytics tools like Google Analytics to track your site's performance and identify areas for improvement. Key actions include:",
+              text: "Optimization is an ongoing process that requires regular monitoring and testing. Use analytics tools like Google Analytics to track your site's performance and identify areas for improvement. Key actions include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Performance Monitoring:",
+                bold: "Performance Monitoring",
                 text: "Regularly check your site's load times, uptime, and overall performance to ensure it remains optimized.",
               },
               {
-                bold: "A/B Testing:",
+                bold: "A/B Testing",
                 text: "Conduct A/B tests to compare different versions of your site and determine which one performs better in terms of user engagement and conversions.",
               },
               {
-                bold: "User Feedback:",
+                bold: "User Feedback",
                 text: "Collect and analyze user feedback to understand pain points and areas that need improvement.",
               },
             ],

@@ -1,16 +1,28 @@
-export interface textProps {
+export interface TextProps {
   text: string;
 }
 
-export interface listProps {
+export interface ListProps {
   bold: string;
   text: string;
 }
 
-export interface Element {
-  type: "p" | "ul" | "h";
-  content: textProps | listProps[];
+export interface ParagraphElement {
+  type: "p";
+  content: TextProps;
 }
+
+export interface HeadingElement {
+  type: "h";
+  content: TextProps;
+}
+
+export interface ListElement {
+  type: "ul";
+  content: ListProps[];
+}
+
+export type Element = ParagraphElement | HeadingElement | ListElement;
 
 export interface BlogSection {
   heading: string;

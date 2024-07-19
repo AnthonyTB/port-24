@@ -32,6 +32,7 @@ export function About() {
           <Image
             alt="Image of Anthony"
             maw={500}
+            width={"100px"}
             mx={"auto"}
             src={Headshot.src}
           />

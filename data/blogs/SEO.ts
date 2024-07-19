@@ -108,30 +108,30 @@ export const SEO: Blog = {
           {
             type: "p",
             content: {
-              text: "On-page SEO refers to optimizing individual web pages to rank higher in search results. Key on-page elements include:",
+              text: "On-page SEO refers to optimizing individual web pages to rank higher in search results. Key on-page elements include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Title Tags:",
+                bold: "Title Tags",
                 text: "Ensure your titles are descriptive, keyword-rich, and concise (50-60 characters).",
               },
               {
-                bold: "Meta Descriptions:",
+                bold: "Meta Descriptions",
                 text: "Write compelling meta descriptions (150-160 characters) that accurately describe the content and include target keywords.",
               },
               {
-                bold: "Headings:",
+                bold: "Headings",
                 text: "Use heading tags (H1, H2, H3) to structure your content and make it easier for search engines and users to understand.",
               },
               {
-                bold: "URL Structure:",
+                bold: "URL Structure",
                 text: "Keep URLs short, descriptive, and keyword-rich.",
               },
               {
-                bold: "Content:",
+                bold: "Content",
                 text: "Create high-quality, original content that provides value to your audience and naturally incorporates target keywords.",
               },
             ],
@@ -144,26 +144,26 @@ export const SEO: Blog = {
           {
             type: "p",
             content: {
-              text: "Technical SEO focuses on optimizing your website's backend structure to improve its visibility and performance. Key aspects include:",
+              text: "Technical SEO focuses on optimizing your website's backend structure to improve its visibility and performance. Key aspects include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Site Speed:",
+                bold: "Site Speed",
                 text: "Ensure your site loads quickly to reduce bounce rates and improve user experience. Use tools like Google PageSpeed Insights to identify and fix performance issues.",
               },
               {
-                bold: "Mobile-Friendliness:",
+                bold: "Mobile-Friendliness",
                 text: "Optimize your site for mobile devices, as mobile-friendly websites rank higher in search results.",
               },
               {
-                bold: "XML Sitemaps:",
+                bold: "XML Sitemaps",
                 text: "Create and submit an XML sitemap to help search engines index your site more efficiently.",
               },
               {
-                bold: "Robots.txt:",
+                bold: "Robots.txt",
                 text: "Use a robots.txt file to control which pages search engines should or shouldn’t crawl.",
               },
             ],
@@ -176,22 +176,22 @@ export const SEO: Blog = {
           {
             type: "p",
             content: {
-              text: "Off-page SEO involves activities outside your website that impact its ranking. Key off-page strategies include:",
+              text: "Off-page SEO involves activities outside your website that impact its ranking. Key off-page strategies include",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Backlink Building:",
+                bold: "Backlink Building",
                 text: "Acquire high-quality backlinks from reputable websites to boost your site's authority and credibility. Use outreach, guest posting, and content promotion to gain backlinks.",
               },
               {
-                bold: "Social Media Marketing:",
+                bold: "Social Media Marketing",
                 text: "Promote your content on social media platforms to increase visibility and drive traffic to your site.",
               },
               {
-                bold: "Online Reviews:",
+                bold: "Online Reviews",
                 text: "Encourage satisfied customers to leave positive reviews on platforms like Google My Business, Yelp, and Trustpilot.",
               },
             ],
@@ -204,22 +204,22 @@ export const SEO: Blog = {
           {
             type: "p",
             content: {
-              text: "For businesses with a physical presence, local SEO is crucial. Optimize your site to rank higher in local search results by:",
+              text: "For businesses with a physical presence, local SEO is crucial. Optimize your site to rank higher in local search results by",
             },
           },
           {
             type: "ul",
             content: [
               {
-                bold: "Google My Business:",
+                bold: "Google My Business",
                 text: "Create and optimize your Google My Business profile with accurate business information, photos, and reviews.",
               },
               {
-                bold: "Local Keywords:",
+                bold: "Local Keywords",
                 text: "Include local keywords (e.g., “web development agency in New York”) in your content and meta tags.",
               },
               {
-                bold: "NAP Consistency:",
+                bold: "NAP Consistency",
                 text: "Ensure your business name, address, and phone number (NAP) are consistent across all online directories and listings.",
               },
             ],
