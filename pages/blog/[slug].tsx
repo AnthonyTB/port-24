@@ -78,7 +78,7 @@ export default function BlogPage({ data }) {
   }, [data.blog]);
 
   return (
-    <Container py={"xl"}>
+    <Container py={"xl"} size={"100%"}>
       {loaded && blog ? (
         <>
           <Title fz={"h2"} ff={"Horizon Outlined"}>
