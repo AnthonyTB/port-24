@@ -17,11 +17,7 @@ import classes from "./blog.module.css";
 import { CTA } from "../../components/core/CTA/CTA";
 import { Heading, Paragraph, UL } from "../../components/core/Elements";
 
-const El = ({
-  type,
-  content,
-  idx,
-}: Element & { idx: number }): ReactElement | null => {
+const El = ({ type, content }: any & { idx: number }): ReactElement | null => {
   let element: ReactElement | null = null;
   switch (type) {
     case "p":
