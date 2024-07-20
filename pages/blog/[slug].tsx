@@ -81,7 +81,7 @@ export default function BlogPage({ data }) {
     <Container py={"xl"} size={"100%"}>
       {loaded && blog ? (
         <>
-          <Title fz={"h2"} ff={"Horizon Outlined"}>
+          <Title ta={"center"} maw={"1000px"} fz={"h2"} ff={"Horizon Outlined"}>
             {blog.title}
           </Title>
           {blog.content.sections.map((section, idx) => (
@@ -91,7 +91,7 @@ export default function BlogPage({ data }) {
               body={section.body}
             />
           ))}
-          <Grid gutter={"xl"}>
+          <Grid maw={"1000px"} mx={"auto"} gutter={"xl"}>
             <Grid.Col span={{ base: 6 }}>
               <Text fw={700}>Categories</Text>
               <Divider />
