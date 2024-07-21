@@ -7,6 +7,7 @@ export const Performance: Blog = {
   image:
     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2234&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   created_at: "07/14/2024",
+  meta: "Discover the key to effective site optimization with expert tips from a Fort Wayne web development professional. Learn how to boost website performance, enhance user experience, and improve SEO. Read now for actionable insights!",
   categories: ["SEO", "Performance", "Testing", "Development"],
   content: {
     sections: [

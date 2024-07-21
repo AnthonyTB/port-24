@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Blog } from "../data/blogs/type";
 import Blogs from "../data/blogs/All";
 import { useState, useEffect } from "react";
+import Head from "next/head";
 
 function Section({ component }) {
   return (
@@ -52,6 +53,12 @@ export default function IndexPage({ data }) {
 
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="Discover Anthony's professional portfolio, a Fort Wayne web development expert specializing in Development, E-commerce, SEO, and Optimization. Elevate your digital presence with innovative projects and expert insights. Visit now to learn how Anthony can help bring your web development vision to life."
+        />
+      </Head>
       {sections.map((section, idx) => (
         <Section key={`section ${idx}`} component={section} />
       ))}

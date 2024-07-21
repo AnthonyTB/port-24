@@ -16,6 +16,7 @@ import { CardsCarousel } from "../../components/core/Carousel/Carousel";
 import classes from "./blog.module.css";
 import { CTA } from "../../components/core/CTA/CTA";
 import { Heading, Paragraph, UL } from "../../components/core/Elements";
+import Head from "next/head";
 
 const El = ({ type, content }: any & { idx: number }): ReactElement | null => {
   let element: ReactElement | null = null;
@@ -81,6 +82,9 @@ export default function BlogPage({ data }) {
     <Container py={"xl"} size={"100%"}>
       {loaded && blog ? (
         <>
+          <Head>
+            <meta name="description" content={blog.meta} />
+          </Head>
           <Title ta={"center"} maw={"1000px"} fz={"h2"} ff={"Horizon Outlined"}>
             {blog.title}
           </Title>

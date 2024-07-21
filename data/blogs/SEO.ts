@@ -6,6 +6,7 @@ export const SEO: Blog = {
   image:
     "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2306&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   created_at: "07/14/2024",
+  meta: "Learn the fundamentals of SEO from a Fort Wayne web development expert. Discover how search engine optimization can boost your website's visibility and drive more traffic. Read now for essential SEO insights!",
   categories: ["SEO", "Development"],
   content: {
     sections: [

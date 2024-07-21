@@ -32,6 +32,7 @@ export interface BlogSection {
 export interface Blog {
   title: string;
   image: string;
+  meta: string;
   categories: Array<
     "SEO" | "Performance" | "Testing" | "Development" | "UI/UX"
   >;
