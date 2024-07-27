@@ -10,7 +10,11 @@ export default function ErrorPage() {
     <div className={classes.root}>
       <Container>
         <div className={classes.inner}>
-          <Image src={Error.src} className={classes.image} />
+          <Image
+            alt="404 error icon"
+            src={Error.src}
+            className={classes.image}
+          />
           <div className={classes.content}>
             <Title className={classes.title}>
               Appears we've ventured into uncharted territory
