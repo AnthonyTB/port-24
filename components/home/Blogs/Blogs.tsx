@@ -1,6 +1,5 @@
 import { ContentSection } from "../../core/ContentSection/ContentSection";
 import { CardsCarousel } from "../../core/Carousel/Carousel";
-
 import { Skeleton } from "@mantine/core";
 
 export function BlogsSection({ blogs }) {

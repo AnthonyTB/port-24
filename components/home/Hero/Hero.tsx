@@ -9,12 +9,12 @@ export function Hero() {
       <Container size={"xl"}>
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className="branding" c={"white"} fw={900}>
+            {/* <Title className="branding" c={"white"} fw={900}>
               anthony
               <Text variant="gradient" ff={"Roboto"} component="span">
                 .
               </Text>
-            </Title>
+            </Title> */}
             <Title className={classes.title}>
               I WILL HELP YOU{" "}
               <Text

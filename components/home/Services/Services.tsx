@@ -3,7 +3,7 @@ import {
   IconSourceCode,
   IconSeo,
   IconShoppingBag,
-  IconLoader,
+  IconBrandSpeedtest,
 } from "@tabler/icons-react";
 import { ContentSection } from "../../core/ContentSection/ContentSection";
 import { motion } from "framer-motion";
@@ -27,7 +27,7 @@ const services = [
     description: "I make selling your products and services online a breeze.",
   },
   {
-    icon: IconLoader,
+    icon: IconBrandSpeedtest,
     title: "Optimization",
     description:
       "Speed and Responsiveness is crucial for customers having a great experience on your website and I make that a priority by using modern technologies.",
@@ -47,7 +47,7 @@ export function Services() {
         <feature.icon
           style={{ width: rem(26), height: rem(26) }}
           stroke={1.5}
-          color="#242424"
+          color="#fff"
         />
       </ThemeIcon>
       <Text fz="lg" mt="sm" fw={500}>

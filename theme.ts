@@ -1,7 +1,7 @@
 import { createTheme, Button } from "@mantine/core";
 
 export const theme = createTheme({
-  defaultGradient: { from: "#F7FF01", to: "#C6FF00" },
+  defaultGradient: { from: "#62cff4", to: "#2c67f2" },
   fontFamily: "Orbitron, mono-space",
   components: {
     Button: Button.extend({

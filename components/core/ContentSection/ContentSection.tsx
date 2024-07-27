@@ -1,4 +1,11 @@
-import { Title, Text, Button, Grid, useMantineTheme } from "@mantine/core";
+import {
+  Title,
+  Text,
+  Button,
+  Grid,
+  useMantineTheme,
+  Divider,
+} from "@mantine/core";
 import classes from "./ContentSection.module.css";
 import { useMediaQuery } from "@mantine/hooks";
 import { ReactElement } from "react";

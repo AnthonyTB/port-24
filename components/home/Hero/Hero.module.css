@@ -37,12 +37,17 @@
 .branding {
   position: absolute;
   width: 600px;
-  left: 0px;
-  top: 400px;
+  left: -30px;
+  top: 350px;
+
+  @media (min-width: 500px) {
+    left: 100px;
+    top: 300px;
+  }
 
   @media (min-width: $mantine-breakpoint-sm) {
     width: 1000px;
-    left: 300px;
+    left: 50px;
     top: 200px;
   }
 
@@ -54,8 +59,7 @@
 
   @media (min-width: $mantine-breakpoint-lg) {
     width: 1200px;
-    top: 300px;
-
+    top: 100px;
     left: 400px;
   }
 }

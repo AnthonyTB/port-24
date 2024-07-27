@@ -1,7 +1,7 @@
 import { useState, useEffect, ReactElement } from "react";
 import Blogs from "../../data/blogs/All";
 import { useRouter } from "next/router";
-import { Blog, BlogSection, Element } from "../../data/blogs/type";
+import { Blog, BlogSection } from "../../data/type";
 import {
   Badge,
   Container,
@@ -15,25 +15,8 @@ import { CenterSection } from "../../components/core/CenterSection/CenterSection
 import { CardsCarousel } from "../../components/core/Carousel/Carousel";
 import classes from "./blog.module.css";
 import { CTA } from "../../components/core/CTA/CTA";
-import { Heading, Paragraph, UL } from "../../components/core/Elements";
+import { Element } from "../../components/core/Elements";
 import Head from "next/head";
-
-const El = ({ type, content }: any & { idx: number }): ReactElement | null => {
-  let element: ReactElement | null = null;
-  switch (type) {
-    case "p":
-      element = <Paragraph content={content} />;
-      break;
-    case "h":
-      element = <Heading content={content} />;
-      break;
-    case "ul":
-      element = <UL content={content} />;
-      break;
-  }
-
-  return element;
-};
 
 const Section = ({ heading, body }: BlogSection): ReactElement => {
   return (
@@ -53,12 +36,17 @@ const Section = ({ heading, body }: BlogSection): ReactElement => {
           ""
         )}
         {body.map((i, idx) => (
-          <El key={`e ${idx}`} idx={idx} type={i.type} content={i.content} />
+          <Element
+            key={`e ${idx}`}
+            idx={idx}
+            type={i.type}
+            content={i.content}
+          />
         ))}
-        <div className={classes.corner_1}></div>
-        <div className={classes.corner_2}></div>
-        <div className={classes.corner_3}></div>
-        <div className={classes.corner_4}></div>
+        <div className="corner_1" />
+        <div className="corner_2" />
+        <div className="corner_3" />
+        <div className="corner_4" />
       </div>
     </Container>
   );
@@ -101,7 +89,7 @@ export default function BlogPage({ data }) {
               <Divider />
               <Flex wrap={"wrap"} mt={"sm"} gap={"sm"} direction={"row"}>
                 {blog.categories.map((cat, idx) => (
-                  <Badge c={"#242424"} key={`cat ${idx}`} variant="gradient">
+                  <Badge c={"#fff"} key={`cat ${idx}`} variant="gradient">
                     {cat}
                   </Badge>
                 ))}
@@ -114,7 +102,13 @@ export default function BlogPage({ data }) {
             </Grid.Col>
           </Grid>
           {data.other_blogs.length ? (
-            <CenterSection heading={{ first_half: "read", highlight: "more" }}>
+            <CenterSection
+              heading={{
+                first_half: "read",
+                highlight: "more",
+                later_half: "blogs",
+              }}
+            >
               <div style={{ padding: "20px" }}>
                 <CardsCarousel items={data.other_blogs} />
               </div>

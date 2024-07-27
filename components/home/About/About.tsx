@@ -42,7 +42,7 @@ export function About() {
           order={!mobile ? 1 : 0}
           span={{ base: 12, md: 8 }}
         >
-          <Tabs color="#C6FF00" defaultValue="my story">
+          <Tabs color="#fff" defaultValue="my story">
             <Tabs.List grow>
               {tabs.map((tab) => (
                 <Tabs.Tab

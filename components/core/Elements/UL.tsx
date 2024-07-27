@@ -1,7 +1,7 @@
 import { List, ThemeIcon, rem, Text, Space } from "@mantine/core";
-import { IconCircleDashedCheck } from "@tabler/icons-react";
+import { IconFocus2 } from "@tabler/icons-react";
 import { ReactElement } from "react";
-import { ListProps } from "../../../data/blogs/type";
+import { ListProps } from "../../../data/type";
 
 export default function UL({
   content,
@@ -16,8 +16,8 @@ export default function UL({
       center
       icon={
         <ThemeIcon variant="gradient" size={24} radius="xl">
-          <IconCircleDashedCheck
-            color="#242424"
+          <IconFocus2
+            color="#fff"
             style={{ width: rem(20), height: rem(20) }}
           />
         </ThemeIcon>

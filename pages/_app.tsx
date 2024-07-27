@@ -2,10 +2,12 @@ import "@mantine/core/styles.css";
 import { Container, MantineProvider, Card } from "@mantine/core";
 import { theme } from "../theme";
 import "../styles/global.css";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: any) {
+  const router = useRouter();
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -30,14 +32,25 @@ export default function App({ Component, pageProps }: any) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <title>{"anthony"}</title>
+        <title>{"<anthony />"}</title>
       </Head>
       <MantineProvider forceColorScheme="dark" theme={theme}>
         <div className="global">
-          <Container py={"xl"} size={1400}>
-            <Card padding={0} radius={"xl"}>
-              <Component {...pageProps} />
-            </Card>
+          <Container py={"xl"} size={1480}>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={router.asPath}
+                initial={{ opacity: 0, y: 150 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 150 }}
+              >
+                <Card padding={0} shadow={"xl"} radius={"xl"}>
+                  <Component {...pageProps} />
+                </Card>
+              </motion.div>
+            </AnimatePresence>
           </Container>
         </div>
         <motion.div className="progress" style={{ scaleX }} />

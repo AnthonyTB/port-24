@@ -1,3 +1,5 @@
+import { Icon } from "@tabler/icons-react";
+
 export interface TextProps {
   text: string;
 }
@@ -39,4 +41,20 @@ export interface Blog {
   slug: string;
   created_at: string;
   content: { sections: BlogSection[] };
+}
+
+export interface Client {
+  name: string;
+  image: string;
+  meta: string;
+  short: string;
+  categories: Array<"SEO" | "Development" | "UI/UX Improvement">;
+  slug: string;
+  stats?: { title: string; description: string; value: string }[];
+  created_at: string;
+  content: {
+    evaluation: Element[];
+    implementation: Element[];
+    conclusion: Element[];
+  };
 }

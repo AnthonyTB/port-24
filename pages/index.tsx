@@ -5,10 +5,18 @@ import { ClientsSection } from "../components/home/Clients/Clients";
 import { BlogsSection } from "../components/home/Blogs/Blogs";
 import { Contact } from "../components/home/Contact/Contact";
 import { motion } from "framer-motion";
-import { Blog } from "../data/blogs/type";
+import { Blog, Client } from "../data/type";
 import Blogs from "../data/blogs/All";
+import Clients from "../data/clients/All";
 import { useState, useEffect } from "react";
 import Head from "next/head";
+
+interface Data {
+  image: string;
+  title: string;
+  category: string;
+  btn: { label: string; link: string; disabled?: boolean };
+}
 
 function Section({ component }) {
   return (
@@ -25,19 +33,14 @@ function Section({ component }) {
 
 export default function IndexPage({ data }) {
   const [loaded, setLoaded] = useState(false);
-  const [blogs, setBlogs] = useState<
-    | null
-    | {
-        image: string;
-        title: string;
-        btn: { label: string; link: string; category: string };
-      }[]
-  >(null);
+  const [content, setContent] = useState<null | {
+    blogs: Data[] | null;
+    clients: Data[] | null;
+  }>(null);
 
   useEffect(() => {
-    console.log(data);
     if (data) {
-      setBlogs(data);
+      setContent(data);
       setLoaded(true);
     }
   }, [data]);
@@ -46,8 +49,14 @@ export default function IndexPage({ data }) {
     <Hero key={1} />,
     <About key={2} />,
     <Services key={3} />,
-    <ClientsSection key={4} />,
-    <BlogsSection blogs={blogs} key={5} />,
+    <ClientsSection
+      clients={content && content.clients ? content.clients : null}
+      key={4}
+    />,
+    <BlogsSection
+      blogs={content && content.blogs ? content.blogs : null}
+      key={5}
+    />,
     <Contact key={6} />,
   ];
 
@@ -68,12 +77,29 @@ export default function IndexPage({ data }) {
 
 export async function getStaticProps() {
   const fetchData = async () => {
-    const data = Blogs.map((b: Blog, idx: number) => {
+    const data: { blogs: Data[] | null; clients: Data[] | null } = {
+      blogs: null,
+      clients: null,
+    };
+    data.blogs = Blogs.map((b: Blog, idx: number) => {
       return {
         image: b.image,
         title: b.title,
         category: b.categories[0],
         btn: { label: "READ", link: `/blog/${b.slug}` },
+      };
+    });
+
+    data.clients = Clients.map((c: Client, idx: number) => {
+      return {
+        image: c.image,
+        title: c.name,
+        category: c.categories[0],
+        btn: {
+          label: c.slug === "gulf-coast-guardians" ? "COMING SOON" : "VIEW",
+          link: `/client/${c.slug}`,
+          disabled: c.slug === "gulf-coast-guardians",
+        },
       };
     });
 

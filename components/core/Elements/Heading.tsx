@@ -1,6 +1,6 @@
 import { Text } from "@mantine/core";
 import { ReactElement } from "react";
-import { TextProps } from "../../../data/blogs/type";
+import { TextProps } from "../../../data/type";
 
 export default function Heading({
   content,

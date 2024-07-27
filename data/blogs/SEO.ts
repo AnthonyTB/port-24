@@ -1,4 +1,4 @@
-import { Blog } from "./type";
+import { Blog } from "../type";
 
 export const SEO: Blog = {
   title: "The Ultimate Guide to SEO: Boosting Your Online Presence",

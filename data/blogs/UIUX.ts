@@ -1,4 +1,4 @@
-import { Blog } from "./type";
+import { Blog } from "../type";
 
 export const UIUX: Blog = {
   title: "Understanding How User's Use Your Site",
