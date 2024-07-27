@@ -17,10 +17,10 @@ export default function ErrorPage() {
           />
           <div className={classes.content}>
             <Title className={classes.title}>
-              Appears we've ventured into uncharted territory
+              Appears we&apos;ve ventured into uncharted territory
             </Title>
             <Text size="lg" ta="center" className={classes.description}>
-              Let's get back to safety and check out some of the blogs and
+              Let&apos;s get back to safety and check out some of the blogs and
               client stories.
             </Text>
             <Group justify="center">
