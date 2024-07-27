@@ -105,7 +105,7 @@ export const QH: Client = {
           },
           {
             bold: "Database",
-            text: "I selected MySQL for our database needs due to its reliability, performance, and familiarity. MySQL's robust capabilities allowed us to efficiently manage the client's data and ensure quick access times.",
+            text: "I selected MySQL for our database needs due to its reliability, performance, and familiarity. MySQL's robust capabilities allowed me to efficiently manage the client's data and ensure quick access times.",
           },
         ],
       },

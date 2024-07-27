@@ -32,7 +32,7 @@ export function Hero() {
               I specialize in crafting unique and innovative web solutions
               tailored to your business needs. I combine creativity with
               cutting-edge technology to ensure your online presence is not just
-              seen, but remembered. Let us transform your vision into a digital
+              seen, but remembered. Let me transform your vision into a digital
               masterpiece that sets you apart in a crowded marketplace.
             </Text>
 

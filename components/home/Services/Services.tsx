@@ -72,7 +72,7 @@ export function Services() {
             website's visibility, helping you rank higher on search engines and
             attract organic traffic. Additionally, I optimize your site for
             speed, performance, and mobile compatibility, ensuring it runs
-            smoothly across all devices. Partner with Phoenix Studio 01 to
+            smoothly across all devices. Partner with me to
             transform your digital footprint and achieve your business goals."
     >
       <SimpleGrid cols={{ base: 1, md: 2 }} spacing={30}>
