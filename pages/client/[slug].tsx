@@ -41,7 +41,7 @@ function Section({
               : { textOrientation: "mixed", writingMode: "vertical-lr" }
           }
           ta={"left"}
-          fz={mobile ? 26 : 50}
+          fz={mobile ? 26 : 38}
           ff={"Horizon Outlined"}
         >
           {idx}
@@ -52,7 +52,7 @@ function Section({
             component="span"
             ff={"Horizon"}
             variant="gradient"
-            fz={mobile ? 26 : 50}
+            fz={mobile ? 26 : 38}
           >
             {heading}
           </Text>
