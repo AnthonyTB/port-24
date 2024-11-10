@@ -3,7 +3,7 @@ export const Eighteen: Client = {
   name: "1838 Bourbon & Wine Bar",
   slug: "1838-bourbon-wine-bar",
   categories: ["Development", "SEO"],
-  image: "https://www.1838.bar/_next/static/media/HeroImg.05122abd.jpg",
+  image: "https://www.1838.bar/_next/static/media/HeroImg.d72a072e.webp",
   meta: "",
   short:
     "1838 Bourbon and Wine Bar brings a touch of elegance to the heart of downtown Rushville, IN. The bar features a broad selection of spirits, wine, and cigars, which patrons are welcome to indulge in while relaxing in the bar’s walk-in humidor cigar lounge.",

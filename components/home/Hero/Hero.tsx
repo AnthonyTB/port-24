@@ -49,6 +49,7 @@ export function Hero() {
             className={classes.branding}
             style={{ rotate: "20deg" }}
             src={Logo.src}
+            alt="Anthony branding"
             opacity={".05"}
           />
         </div>
