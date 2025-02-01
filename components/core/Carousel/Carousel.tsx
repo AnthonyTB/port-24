@@ -1,3 +1,5 @@
+"use client";
+
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
 import { Paper, Text, Title, useMantineTheme, rem, Flex } from "@mantine/core";
@@ -50,7 +52,8 @@ function Card({ image, title, category, btn }: CardProps) {
 
 export function CardsCarousel({ items }) {
   const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`, true);
+  console.log({ mobile });
   const slides = items.map((item) => (
     <Carousel.Slide key={item.title}>
       <Card {...item} />
