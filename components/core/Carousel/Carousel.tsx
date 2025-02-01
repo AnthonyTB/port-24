@@ -60,7 +60,8 @@ export function CardsCarousel({ items }) {
   return (
     <Carousel
       slideSize={{ base: "100%", sm: "50%" }}
-      slideGap={{ base: rem(2), sm: "xl" }}
+      slideGap={{ base: 2, sm: "xl" }}
+      align="start"
       orientation="horizontal"
       slidesToScroll={mobile ? 1 : 2}
     >
